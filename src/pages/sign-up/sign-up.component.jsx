@@ -35,7 +35,7 @@ class SignUpPage extends React.Component {
     console.log(userName,email,password)
     return (
       <div className="sign-up">
-        <h2 className="title">Alreay did't have an account.</h2>
+        <h2 className="title">I did't have an account.</h2>
         <span className="subtitle">Sign up with username ,email and password.</span>
         <form className='sign-up-form' onSubmit={this.handleSubmit}>
           <FormInput

@@ -7,6 +7,7 @@ import Header from './components/header/header.component'
 import HomePage from './pages/homepage/homepage.component'
 import SignInPage from './pages/sign-in/sign-in.component'
 import SignUpPage from './pages/sign-up/sign-up.component'
+import AadhaarPage from './pages/aadhaar/aadhaar.component'
 
 class App extends React.Component {
   constructor(props) {
@@ -26,6 +27,7 @@ class App extends React.Component {
         <Route path='/' exact component={HomePage} />
           <Route path='/sign-in' exact component={isLogin?null:SignInPage} />
           <Route path='/sign-up' exact component={isLogin?null:SignUpPage} />
+          <Route path='/aadhaar' exact component={isLogin?null:AadhaarPage} />
         </Switch>
       </div>
     )
